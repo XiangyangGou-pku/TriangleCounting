@@ -37,7 +37,7 @@ public:
 		string d_string = to_string(d);
 		string e = s_string + d_string;
 	//	double p = double(MurmurHash((const unsigned char*)e.c_str(), e.length()) % 1000000 + 1) / 1000001;
-		double p = (rand()+1)/double(RAND_MAX+2);
+		double p = (rand()%10000+1)/double(10000+2);
 		if(p<=0||p>=1)
 			cout<<"wrong "<<p<<endl;
 		current_time = time;
